@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <style>
+         #logo{
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            height: 75px;
+        }
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 500px;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+            
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid "
+        style="background-image: url(/images/Top-Gun-Maverick-Review.jpg); background-size:cover;">
+            <nav class="navbar navbar-expand-lg navbar-light position-sticky fixed-top">
+                <a class="navbar-brand" href="#" id="logo">Movie Mania</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mr-sm-2 justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Language
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Hindi</a>
+                              <a class="dropdown-item" href="#">Telugu</a>
+                              <a class="dropdown-item" href="#">English</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Genre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Romance</a>
+                              <a class="dropdown-item" href="#">Thriller</a>
+                              <a class="dropdown-item" href="#">Documentary</a>
+                            </div>
+                          </li>
+                        <li>
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2 .text-muted bg-dark" type="search"
+                                    placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary my-2 my-sm-0 bg-dark"
+                                    type="submit">Search</button>
+                            </form>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+<div>
+    <h2>Movie Mania</h2>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/Video/Video.mp4">
+                <img src="/images/bahubali_poster.jpg" alt="Bahubali" width="600" height="400">
+            </a>
+            <div class="desc">Bahubali</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/Video/Video.mp4">
+                <img src="/images/rrr_poster.jpg" alt="RRR" width="600" height="400">
+            </a>
+            <div class="desc">RRR</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/Video/Video.mp4">
+                <img src="/images/rustom-movie-poster-2.jpg" alt="Rustom" width="600" height="400">
+            </a>
+            <div class="desc">Rustom</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/Video/Video.mp4">
+                <img src="/images/bajirao-mastani-movie-poster-1.jpg" alt="Bajirao Mastani" width="600" height="400">
+            </a>
+            <div class="desc">Bajirao Mastani</div>
+        </div>
+    
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/Video/Video.mp4">
+                <img src="/images/fury_poster.jpg" alt="Fury" width="600" height="400">
+            </a>
+            <div class="desc">Fury</div>
+        </div>
+    
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="/Video/Video.mp4">
+                <img src="/images/top-gun_-maverick.jpg" alt="Top Gun" width="600" height="400">
+            </a>
+            <div class="desc">Top Gun-Maverick</div>
+        </div>
+    
+</div>
+</body>
+
+</html>
