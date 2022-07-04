@@ -50,17 +50,28 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">New</a>
+              <!-- <a class="nav-link" href="#newHollywoodRelease">New</a> -->
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  New
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#newHollywoodRelease">New Hollywood Release</a>
+                  <a class="dropdown-item" href="#newBollywoodRelease">New Bollywood Release</a>
+                  <a class="dropdown-item" href="#newMarathiRelease">New Marathi Release</a>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Popular</a>
-            </li>
+            </li> -->
             <li class="nav-item">
+              <a class="nav-link" href="SignIn.html" >Sign In</a>
+            </li>
+             <!-- <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign In</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
@@ -76,10 +87,12 @@
               <a class="nav-link disabled" href="#">Disabled</a>
             </li> -->
           </ul>
+          <div class="navSearchBox">
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
+        </div>
         </div>
         <div class="profile-container">
             <img class="profile-picture" src="/images/profile.jpg" alt="">
@@ -90,24 +103,24 @@
                       Profile
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a id="navbar-signin" class="dropdown-item" href="#">Sign In</a>
+                      <a id="navbar-signin" class="dropdown-item" href="SignIn.html">Sign In</a>
                       <a class="dropdown-item" href="#">Help</a>
                       <a class="dropdown-item" href="#">Log Out</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
       </nav>
         <div class="content-container">
             <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(172, 170, 59, 0), #151515), url(/images/rockstarBodyImage.jpg);">
+                style="background: linear-gradient(to bottom, rgba(172, 170, 59, 0), #151515), url(/images/rockstarBodyImage.jpg); background-size: cover;">
                 <img class="featured-title" src="/images/logofinal.png" alt="">
                 <h2 class="featured-content-title">Welcome to Movie Box</h2>
                 <p class="featured-desc">Sign In to join Movie Box and watch latest and your favourite movies</p>
-                <button class="featured-button">SIGN IN</button>
+                <button onclick="location.href='SignIn.html'" class="featured-button">SIGN IN</button>
             </div>
             <div class="movie-list-container">
-                <h2 class="movie-list-title">NEW HOLLYWOOD RELEASES</h2>
+                <h2 id="newHollywoodRelease" class="movie-list-title">NEW HOLLYWOOD RELEASES</h2>
                 <div class="movie-list-wrapper">
                 <div class="movie-list">
                     <div class="movie-list-item">
@@ -163,7 +176,7 @@
                 <i class="fas fa-chevron-right arrow"></i>
             </div>
             <div class="movie-list-container">
-                <h2 class="movie-list-title">NEW BOLLYWOOD RELEASES</h2>
+                <h2 id="newBollywoodRelease" class="movie-list-title">NEW BOLLYWOOD RELEASES</h2>
                 <div class="movie-list-wrapper">
                 <div class="movie-list">
                     <div class="movie-list-item">
@@ -219,7 +232,7 @@
                 <i class="fas fa-chevron-right arrow"></i>
             </div>
             <div class="movie-list-container">
-                <h2 class="movie-list-title">NEW MARATHI RELEASES</h2>
+                <h2 id="newMarathiRelease" class="movie-list-title">NEW MARATHI RELEASES</h2>
                 <div class="movie-list-wrapper">
                 <div class="movie-list">
                     <div class="movie-list-item">
@@ -266,7 +279,7 @@
                     </div>
                     <div class="movie-list-item">
                         <img class="movie-list-item-img" src="/images/7.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 7</span>
+                        <span class="movie-list-item-title">Marathi 1</span>
                         <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                             hic fugit similique accusantium.</p>
                         <button class="movie-list-item-button">Watch</button>
@@ -274,21 +287,34 @@
                 </div>
                 <i class="fas fa-chevron-right arrow"></i>
             </div>
-
-
-
-
-
             <!--end of content-container-->
         </div>
-
-
-
-
-
-
     <!--end of nav bar-->
     </div>
+    <div
+          class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-3 px-3 px-xl-5 bg-secondary">
+          <!-- Copyright -->
+          <div class="text-white mb-3 mb-md-0">
+            Copyright © 2020. All rights reserved.
+          </div>
+          <!-- Copyright -->
       
+          <!-- Right -->
+          <div>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#!" class="text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </div>
   </body>
 </html>

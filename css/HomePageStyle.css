@@ -1,3 +1,8 @@
+.navSearchBox{
+  margin-left:12px;
+}
+
+
 .profile-container {
     flex: 2;
     display: flex;
@@ -149,4 +154,7 @@
     color: rgb(213, 159, 159);
     opacity: 0.5;
     cursor: pointer;
+  }
+  *{
+    margin: 0;
   }
