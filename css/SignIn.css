@@ -54,3 +54,12 @@ label{
 .form-control{
     opacity: 0.6;
 }
+.invalid-feedback{
+    color:wheat
+}
+.valid-feedback{
+    color: yellow;
+}
+.registerHere{
+    color: wheat;
+}
