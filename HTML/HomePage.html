@@ -1,320 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/js/HomePage.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="/js/HomePage.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
-    <link rel="stylesheet" href="/css/HomePageStyle.css">
-    <title>Movie Box</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="/images/logofinal.png" width="45" height="30" class="d-inline-block align-top" alt="">
-            Movie Box
-          </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <!-- <a class="nav-link" href="#newHollywoodRelease">New</a> -->
-              <div class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  New
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#newHollywoodRelease">New Hollywood Release</a>
-                  <a class="dropdown-item" href="#newBollywoodRelease">New Bollywood Release</a>
-                  <a class="dropdown-item" href="#newMarathiRelease">New Marathi Release</a>
-                </div>
-              </div>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Popular</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="SignIn.html" >Sign In</a>
-            </li>
-             <!-- <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li> -->
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
-          </ul>
-          <div class="navSearchBox">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-        </div>
-        <div class="profile-container">
-            <img class="profile-picture" src="/images/profile.jpg" alt="">
-            <div class="profile-text-container">
-                <!-- <span class="profile-text">Profile</span> -->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Profile
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a id="navbar-signin" class="dropdown-item" href="SignIn.html">Sign In</a>
-                      <a class="dropdown-item" href="#">Help</a>
-                      <a class="dropdown-item" href="#">Log Out</a>
-                    </div>
-                </div>
+  <link rel="stylesheet" href="/css/HomePageStyle.css">
+  <script src="/js/HomePage.js"></script>
+  <title>Movie Box</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logofinal.png" width="45" height="30" class="d-inline-block align-top" alt="">
+      Movie Box
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              New
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#newHollywoodRelease">New Hollywood Release</a>
+              <a class="dropdown-item" href="#newBollywoodRelease">New Bollywood Release</a>
+              <a class="dropdown-item" href="#newMarathiRelease">New Marathi Release</a>
             </div>
-        </div>
-      </nav>
-        <div class="content-container">
-            <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(172, 170, 59, 0), #151515), url(/images/rockstarBodyImage.jpg); background-size: cover;">
-                <img class="featured-title" src="/images/logofinal.png" alt="">
-                <h2 class="featured-content-title">Welcome to Movie Box</h2>
-                <p class="featured-desc">Sign In to join Movie Box and watch latest and your favourite movies</p>
-                <button onclick="location.href='SignIn.html'" class="featured-button">SIGN IN</button>
-            </div>
-            <div class="movie-list-container">
-                <h2 id="newHollywoodRelease" class="movie-list-title">NEW HOLLYWOOD RELEASES</h2>
-                <div class="movie-list-wrapper">
-                <div class="movie-list">
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/hollywoodAction1.jpg" alt="">
-                        <span class="movie-list-item-title">Holly 1</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/hollywoodRomantic1.jpg" alt="">
-                        <span class="movie-list-item-title">Holly 2</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/hollywoodHorror1.jpg" alt="">
-                        <span class="movie-list-item-title">Holly 3</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/4.jpg" alt="">
-                        <span class="movie-list-item-title">Holly 4</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/5.jpg" alt="">
-                        <span class="movie-list-item-title">Holly 5</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/6.jpg" alt="">
-                        <span class="movie-list-item-title">Holly 6</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/7.jpg" alt="">
-                        <span class="movie-list-item-title">Holly 7</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                </div>
-                <i class="fas fa-chevron-right arrow"></i>
-            </div>
-            <div class="movie-list-container">
-                <h2 id="newBollywoodRelease" class="movie-list-title">NEW BOLLYWOOD RELEASES</h2>
-                <div class="movie-list-wrapper">
-                <div class="movie-list">
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/bollywoodAction1.jpg" alt="">
-                        <span class="movie-list-item-title">Bolly 1</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/bollywoodRomantic1.jpg" alt="">
-                        <span class="movie-list-item-title">Bolly 2</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/bollywoodHorror1.jpg" alt="">
-                        <span class="movie-list-item-title">Bolly 3</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/4.jpg" alt="">
-                        <span class="movie-list-item-title">Bolly 4</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/5.jpg" alt="">
-                        <span class="movie-list-item-title">Bolly 5</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/6.jpg" alt="">
-                        <span class="movie-list-item-title">Bolly 6</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/7.jpg" alt="">
-                        <span class="movie-list-item-title">Bolly 7</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                </div>
-                <i class="fas fa-chevron-right arrow"></i>
-            </div>
-            <div class="movie-list-container">
-                <h2 id="newMarathiRelease" class="movie-list-title">NEW MARATHI RELEASES</h2>
-                <div class="movie-list-wrapper">
-                <div class="movie-list">
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/marathiAction1.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 1</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/marathiRomantic1.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 2</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/marathiHorror1.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 3</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/4.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 4</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/5.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 5</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/6.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 6</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="/images/7.jpg" alt="">
-                        <span class="movie-list-item-title">Marathi 1</span>
-                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                            hic fugit similique accusantium.</p>
-                        <button class="movie-list-item-button">Watch</button>
-                    </div>
-                </div>
-                <i class="fas fa-chevron-right arrow"></i>
-            </div>
-            <!--end of content-container-->
-        </div>
-    <!--end of nav bar-->
+          </div>
+        </li>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="SignIn.html">Sign In</a>
+        </li>
+      </ul>
+      <div class="navSearchBox fixed-right">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <div
-          class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-3 px-3 px-xl-5 bg-secondary">
-          <!-- Copyright -->
-          <div class="text-white mb-3 mb-md-0">
-            Copyright © 2020. All rights reserved.
+    <div class="profile-container">
+      <img class="profile-picture" src="/images/profile.jpg" alt="">
+      <div class="profile-text-container">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Profile
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a id="navbar-signin" class="dropdown-item" href="SignIn.html">Sign In</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Log Out</a>
           </div>
-          <!-- Copyright -->
-      
-          <!-- Right -->
-          <div>
-            <a href="#!" class="text-white me-4">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#!" class="text-white me-4">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#!" class="text-white me-4">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#!" class="text-white">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-          <!-- Right -->
         </div>
-  </body>
+      </div>
+    </div>
+  </nav>
+  <div class="content-container">
+    <div class="featured-content"
+      style="background: linear-gradient(to bottom, rgba(172, 170, 59, 0), #151515), url(/images/rockstarBodyImage.jpg); background-size: cover;">
+      <img class="featured-title" src="/images/logofinal.png" alt="">
+      <h2 class="featured-content-title">Welcome to Movie Box</h2>
+      <p class="featured-desc">Sign In to join Movie Box and watch latest and your favourite movies</p>
+      <button onclick="location.href='SignIn.html'" class="featured-button">SIGN IN</button>
+    </div>
+    <div class="movie-list-container">
+      <h2 id="newHollywoodRelease" class="movie-list-title">NEW HOLLYWOOD RELEASES</h2>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="/images/hollywoodAction1.jpg" alt="">
+            <span class="movie-list-item-title">Holly 1</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              hic fugit similique accusantium.</p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="/images/hollywoodRomantic1.jpg" alt="">
+            <span class="movie-list-item-title">Holly 2</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              hic fugit similique accusantium.</p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="/images/hollywoodHorror1.jpg" alt="">
+            <span class="movie-list-item-title">Holly 3</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              hic fugit similique accusantium.</p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="/images/4.jpg" alt="">
+            <span class="movie-list-item-title">Holly 4</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              hic fugit similique accusantium.</p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="/images/5.jpg" alt="">
+            <span class="movie-list-item-title">Holly 5</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              hic fugit similique accusantium.</p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="/images/6.jpg" alt="">
+            <span class="movie-list-item-title">Holly 6</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              hic fugit similique accusantium.</p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="/images/7.jpg" alt="">
+            <span class="movie-list-item-title">Holly 7</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              hic fugit similique accusantium.</p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+        </div>
+        <i class="fas fa-chevron-right arrow"></i>
+      </div>
+      <div class="movie-list-container">
+        <h2 id="newBollywoodRelease" class="movie-list-title">NEW BOLLYWOOD RELEASES</h2>
+        <div class="movie-list-wrapper">
+          <div class="movie-list">
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="/images/bollywoodAction1.jpg" alt="">
+              <span class="movie-list-item-title">Bolly 1</span>
+              <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                hic fugit similique accusantium.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="/images/bollywoodRomantic1.jpg" alt="">
+              <span class="movie-list-item-title">Bolly 2</span>
+              <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                hic fugit similique accusantium.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="/images/bollywoodHorror1.jpg" alt="">
+              <span class="movie-list-item-title">Bolly 3</span>
+              <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                hic fugit similique accusantium.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="/images/4.jpg" alt="">
+              <span class="movie-list-item-title">Bolly 4</span>
+              <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                hic fugit similique accusantium.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="/images/5.jpg" alt="">
+              <span class="movie-list-item-title">Bolly 5</span>
+              <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                hic fugit similique accusantium.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="/images/6.jpg" alt="">
+              <span class="movie-list-item-title">Bolly 6</span>
+              <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                hic fugit similique accusantium.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="/images/7.jpg" alt="">
+              <span class="movie-list-item-title">Bolly 7</span>
+              <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                hic fugit similique accusantium.</p>
+              <button class="movie-list-item-button">Watch</button>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </div>
+        <div class="movie-list-container">
+          <h2 id="newMarathiRelease" class="movie-list-title">NEW MARATHI RELEASES</h2>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="/images/marathiAction1.jpg" alt="">
+                <span class="movie-list-item-title">Marathi 1</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.</p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="/images/marathiRomantic1.jpg" alt="">
+                <span class="movie-list-item-title">Marathi 2</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.</p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="/images/marathiHorror1.jpg" alt="">
+                <span class="movie-list-item-title">Marathi 3</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.</p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="/images/4.jpg" alt="">
+                <span class="movie-list-item-title">Marathi 4</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.</p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="/images/5.jpg" alt="">
+                <span class="movie-list-item-title">Marathi 5</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.</p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="/images/6.jpg" alt="">
+                <span class="movie-list-item-title">Marathi 6</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.</p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="/images/7.jpg" alt="">
+                <span class="movie-list-item-title">Marathi 1</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                  hic fugit similique accusantium.</p>
+                <button class="movie-list-item-button">Watch</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+          <!--end of content-container-->
+        </div>
+        <!--end of nav bar-->
+      </div>
+      <div
+        class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-3 px-3 px-xl-5 bg-secondary fixed-bottom">
+        <!-- Copyright -->
+        <div class="text-white mb-3 mb-md-0">
+          Copyright © 2020. All rights reserved.
+        </div>
+        <!-- Copyright -->
+
+        <!-- Right -->
+        <div>
+          <a href="#!" class="text-white me-4">
+            <em class="fab fa-facebook-f"></em>
+          </a>
+          <a href="#!" class="text-white me-4">
+            <em class="fab fa-twitter"></em>
+          </a>
+          <a href="#!" class="text-white me-4">
+            <em class="fab fa-google"></em>
+          </a>
+          <a href="#!" class="text-white">
+            <em class="fab fa-linkedin-in"></em>
+          </a>
+        </div>
+        <!-- Right -->
+    </div>
+</body>
+
 </html>
