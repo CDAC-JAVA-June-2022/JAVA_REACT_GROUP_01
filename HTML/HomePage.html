@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
   <link rel="stylesheet" href="/css/HomePageStyle.css">
+  <script src="../js/Search.js"></script>
 
   <title>Movie Box</title>
 </head>
@@ -65,8 +66,8 @@
       </ul>
       <div class="navSearchBox fixed-right">
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2" id="myInput" onkeyup="search()" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="search()">Search</button>
         </form>
       </div>
     </div>
@@ -95,6 +96,7 @@
       <p class="featured-desc">Sign In to join Movie Box and watch latest and your favourite movies</p>
       <button onclick="location.href='SignIn.html'" class="featured-button">SIGN IN</button>
     </div>
+    <div id="listItem">
     <div class="movie-list-container">
       <h2 id="newHollywoodRelease" class="movie-list-title">NEW HOLLYWOOD RELEASES</h2>
       <div class="movie-list-wrapper">
@@ -244,6 +246,7 @@
         </div>
         <!--end of nav bar-->
       </div>
+    </div>
     <div
         class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-3 px-3 px-xl-5 bg-black fixed-bottom">
         <!-- Copyright -->
