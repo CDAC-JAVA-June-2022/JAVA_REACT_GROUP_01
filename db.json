@@ -15,32 +15,11 @@
       "id": 2
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 4
-    },
-    {
       "name": "manisha",
       "email": "manisha@gmail.com",
       "password": "manisha@1995",
       "confirmPassword": "manisha@1995",
       "id": 5
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 6
     },
     {
       "name": "Kiran Katrojwar",
@@ -50,13 +29,6 @@
       "id": 7
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 8
-    },
-    {
       "name": "Varsha Katrojwar",
       "email": "varsha@gmail.com",
       "password": "varsha@1995",
@@ -64,102 +36,10 @@
       "id": 9
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 11
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 12
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 13
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 14
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 15
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 16
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 17
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 18
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 19
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 20
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 21
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 22
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "confirmPassword": "",
-      "id": 23
+      "name": "abhijeet",
+      "email": "abhi@mail.com",
+      "password": "abhi@123",
+      "id": 24
     }
   ],
   "comments": [

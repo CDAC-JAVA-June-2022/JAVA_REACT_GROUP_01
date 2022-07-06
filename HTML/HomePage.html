@@ -23,11 +23,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
   <link rel="stylesheet" href="/css/HomePageStyle.css">
-  <script src="../js/Search.js"></script>
-
   <title>Movie Box</title>
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">
@@ -76,13 +73,12 @@
       <div class="profile-text-container">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Profile
+            aria-haspopup="true" aria-expanded="false" value="Profile">
+            
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a id="navbar-signin" class="dropdown-item" href="SignIn.html">Sign In</a>
-            <a class="dropdown-item" href="#">Help</a>
-            <a class="dropdown-item" href="#">Log Out</a>
+            <a class="dropdown-item" href="#">Edit Profile</a>
+            <a class="dropdown-item" href="SignIn.html" onclick="logOut()">Log Out</a>
           </div>
         </div>
       </div>
@@ -273,6 +269,47 @@
         <!-- Right -->
       </div>
       <script src="/js/HomePage.js"></script>
+      <script src="/js/Search.js"></script>
+      <script>
+        let logOut=()=>{
+          localStorage.removeItem("name");
+        }
+
+        $(document).ready(()=>{
+          let profileName=localStorage.getItem("name");
+          console.log(profileName);
+
+          
+        })
+        
+
+        $(document).ready(()=>{
+          let profileName=localStorage.getItem("name");
+          console.log(profileName);
+
+          if(profileName==null){
+            $("#dropdownMenuButton").hide();
+          }else{
+            $("#dropdownMenuButton").html(profileName);
+          }
+        })
+
+        
+          
+          $(".movie-list-item-button").click(()=>{
+            let profileName=localStorage.getItem("name");
+          console.log(profileName);
+
+          if(profileName==null){
+            window.location.href="SignIn.html";
+          }else{
+            window.location.href="MoviePlayerPage.html";
+          }
+          })
+       
+        
+        
+      </script>
     </div>
   </body>
 
