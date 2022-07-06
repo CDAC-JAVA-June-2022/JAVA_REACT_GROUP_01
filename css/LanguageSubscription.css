@@ -1,0 +1,20 @@
+body{
+    background-image: url("../images/rockstarBodyImage.jpg");
+    background-size: cover;
+   }
+.languageContent{
+    text-align: center;
+    margin-top: 20%;
+}
+select ,option{
+    font-size: larger;
+    padding: 18px;
+    background-color: gray;
+    color: wheat;
+}
+button{
+    font-size: larger;
+    padding: 18px;
+    background-color: gray;
+    color: wheat;
+}

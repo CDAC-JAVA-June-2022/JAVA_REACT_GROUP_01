@@ -1,5 +1,6 @@
 .navSearchBox{
-  margin-left:12px;
+  /* margin-left:400px; */
+  /* background-color: red; */
 }
 
 
@@ -59,12 +60,12 @@
   }
   .movie-list-container {
     padding: 0 20px;
-    background-color: rgb(13, 13, 13);
+    background-color: black;
   }
   
   .movie-list-wrapper {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .movie-list {
@@ -73,6 +74,7 @@
     height: 300px;
     transform: translateX(0);
     transition: all 1s ease-in-out;
+    /* background-color: red; */
   }
   
   .movie-list-item {
@@ -142,7 +144,7 @@
     margin-left: 10px;
   }
   .movie-list-title{
-    padding-top: 25px;
+    padding-top: 55px;
     color: white;
   }
   

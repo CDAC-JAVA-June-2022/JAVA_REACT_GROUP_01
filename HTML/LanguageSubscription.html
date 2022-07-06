@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/LanguageSubscription.js"></script>
+    <link rel="stylesheet" href="../css/LanguageSubscription.css">
+</head>
+<body onload="resetSelection()">
+    <div class="languageContent">
+        <select id="subscriptionSelect" size="1" onchange="makeSubmenu(this.value)">
+        <option value="" disabled selected>Choose Subscription</option>
+        <option>Platinum</option>
+        <option>Gold</option>
+        
+        </select>
+        <select id="languageSelect" size="1" >
+        <option value="" disabled selected>Choose Language</option>
+        <option></option>
+        </select> <br> <br>
+        <button onclick="displaySelected()">Show Movies</button>
+    </div>
+    
+</body>
+</html>
