@@ -34,17 +34,8 @@
       "password": "varsha@1995",
       "confirmPassword": "varsha@1995",
       "id": 9
-    },
-    {
-      "name": "abhijeet",
-      "email": "abhi@mail.com",
-      "password": "abhi@123",
-<<<<<<< HEAD
-      "id": 24
-=======
-      "id": 10
->>>>>>> 630e79089c133dbfbb979789aa176a96cc99406d
     }
+  
   ],
   "comments": [
     {

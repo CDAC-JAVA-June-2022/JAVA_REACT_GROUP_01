@@ -26,7 +26,6 @@
     $(document).ready(function () {
       $("button").click(function () {
         let url = "http://localhost:3000/user";
-<<<<<<< HEAD
         let confirmPassword = $("#confirmPassword").val();
         let password = $("#password").val();
         let email= $("#email").val();
@@ -51,27 +50,6 @@
           alert("Please enter valid details and check password again");
         }
 
-=======
-        let password = $("#password").val();
-        let confirmPassword = $("#confirmPassword").val();
-
-        let body = {
-          name: $("#name").val(),
-          email: $("#email").val(),
-          password: password
-        }
-
-        if (password == confirmPassword) {
-          $.post(url, body, (res)=>{
-            console.log(res);
-          })
-
-        }else{
-          alert("Password does not match");
-        }
-
-       
->>>>>>> 630e79089c133dbfbb979789aa176a96cc99406d
       });
     });
   </script>

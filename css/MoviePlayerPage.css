@@ -1,0 +1,15 @@
+body{
+    background-color: black ;
+}
+video{
+    margin-left: 12%;
+}
+.content{
+    color: white;
+    opacity: 0.7;
+    /* justify-content: center; */
+    text-align: center;
+}
+button{
+    margin: 0;
+}
